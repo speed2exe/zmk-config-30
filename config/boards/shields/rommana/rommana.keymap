@@ -25,25 +25,12 @@
     tapping-term-ms = <1024>;
 };
 
+&mt {
+    flavor = "balanced";
+    tapping-term-ms = <1024>;
+};
+
 / {
-    behaviors {
-        hm_l: left_hand_positional_hold_tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LEFT_POSITIONAL_HOLD_TAP";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <1024>;
-            bindings = <&kp>, <&kp>;
-        };
-        hm_r: right_hand_positional_hold_tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "RIGHT_POSITIONAL_HOLD_TAP";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <1024>;
-            bindings = <&kp>, <&kp>;
-            };
-        };
 
     keymap {
         compatible = "zmk,keymap";
@@ -66,8 +53,8 @@
                 &kp F           &kp L           &kp H           &kp W          &kp Z
                 &kp Q           &kp P           &kp U           &kp O          &kp Y
 
-                &hm_l LCTRL S   &hm_l LALT R    &hm_l LSHFT N   &hm_l LGUI T   &kp V
-                &kp K           &hm_r RGUI D    &hm_r RSHFT E   &hm_r RALT A   &hm_r RCTRL I
+                &mt LCTRL S     &mt LALT R      &mt LSHFT N     &mt LGUI T     &kp V
+                &kp K           &mt RGUI D      &mt RSHFT E     &mt RALT A     &mt RCTRL I
 
                 &kp C           &kp B           &kp M
                 &kp G           &kp X           &kp J
