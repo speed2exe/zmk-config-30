@@ -107,5 +107,34 @@
         };
 
 
+        sym {
+//             ┌─────┐                                                 ┌─────┐
+//       ┌─────┤  [  ├─────┐                                     ┌─────┤     ├─────┐
+// ┌─────┤  `  ├─────┤  ]  ├─────┐                         ┌─────┤     ├─────┤     ├─────┐
+// │ CAP ├─────┤  ,  ├─────┤     │                         │     ├─────┤ SFT ├─────┤     │
+// ├─────┤  '  ├─────┤  .  ├─────┤                         ├─────┤ GUI ├─────┤ ALT ├─────┤
+// │  /  ├─────┤  -  ├─────┤     │                         │     ├─────┤     ├─────┤ CTL │
+// └─────┤  \  ├─────┤  =  ├─────┘                         └─────┤     ├─────┤     ├─────┘
+//       └─────┘     └─────┘                                     └─────┘     └─────┘
+//                   ┌─────┐                                     ┌─────┐
+//                   │ TAB ├─────┐                         ┌─────┤     │
+//                   └─────┤     │                         │     ├─────┘
+//                         └─────┘                         └─────┘
+            bindings = <
+                &kp CAPS    &kp GRAVE   &kp LBKT      &kp RBKT    &trans
+                &trans      &trans      &trans        &trans      &trans
+
+                &kp SLASH   &kp SQT     &kp COMMA     &kp DOT     &trans
+                &trans      &kp RGUI    &kp RSHFT     &kp RALT    &kp RCTRL
+
+                &kp BSLH    &kp MINUS     &kp EQUAL
+                &trans      &trans        &trans
+
+                &kp TAB     &trans
+                &trans      &trans
+                >;
+        };
+
+
     };
 };
