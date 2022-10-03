@@ -136,5 +136,34 @@
         };
 
 
+        nav {
+//             ┌─────┐                                                 ┌─────┐
+//       ┌─────┤     ├─────┐                                     ┌─────┤  ↑  ├─────┐
+// ┌─────┤     ├─────┤     ├─────┐                         ┌─────┤ Ins ├─────┤ VlU ├─────┐
+// │ BtC ├─────┤ SFT ├─────┤ Ble │                         │ Hom ├─────┤  ↓  ├─────┤ VlD │
+// ├─────┤ ALT ├─────┤ GUI ├─────┤                         ├─────┤  ←  ├─────┤  →  ├─────┤
+// │ CTL ├─────┤ Bt1 ├─────┤ Usb │                         │ End ├─────┤ PgU ├─────┤ Mut │
+// └─────┤ Bt0 ├─────┤ Bt2 ├─────┘                         └─────┤ PgD ├─────┤ Del ├─────┘
+//       └─────┘     └─────┘                                     └─────┘     └─────┘
+//                   ┌─────┐                                     ┌─────┐
+//                   │     ├─────┐                         ┌─────┤     │
+//                   └─────┤     │                         │     ├─────┘
+//                         └─────┘                         └─────┘
+            bindings = <
+                &bt BT_CLR     &trans         &trans         &trans         &out OUT_BLE
+                &kp HOME       &kp INS        &kp UP         &kp C_VOL_UP   &kp C_VOL_DN
+
+                &kp LCTRL      &kp LALT       &kp LSHFT      &kp LGUI       &out OUT_USB
+                &kp END        &kp LEFT       &kp DOWN       &kp RIGHT      &kp K_MUTE
+
+                &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2
+                &kp PG_DN      &kp PG_UP      &kp DEL
+
+                &trans         &trans
+                &trans         &trans
+                >;
+        };
+
+
     };
 };
