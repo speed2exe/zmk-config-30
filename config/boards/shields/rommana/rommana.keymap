@@ -14,7 +14,6 @@
 #define sym 2
 #define nav 3
 #define fn 4
-#define _bt 5
 
 // &kscan0 {
 //     debounce-period = <16>;
