@@ -41,8 +41,8 @@
 // ┌─────┤  L  ├─────┤  W  ├─────┐                         ┌─────┤  P  ├─────┤  O  ├─────┐
 // │  F  ├─────┤  N  ├─────┤  Z  │                         │  Q  ├─────┤  E  ├─────┤  Y  │
 // ├─────┤  R  ├─SFT─┤  T  ├─────┤                         ├─────┤  D  ├─SFT─┤  A  ├─────┤
-// │  S  ├─ALT─┤  B  ├─GUI─┤  V  │                         │  K  ├─GUI─┤  X  ├─ALT─┤  I  │
-// └─CTL─┤  C  ├─────┤  M  ├─────┘                         └─────┤  G  ├─────┤  J  ├─CTL─┘
+// │  S  ├─CTL─┤  B  ├─GUI─┤  V  │                         │  K  ├─GUI─┤  X  ├─CTL─┤  I  │
+// └─ALT─┤  C  ├─────┤  M  ├─────┘                         └─────┤  G  ├─────┤  J  ├─ALT─┘
 //       └─────┘     └─────┘                                     └─────┘     └─────┘
 //                   ┌─────┐                                     ┌─────┐
 //                   │ SPC ├─────┐                         ┌─────┤ SPC │
@@ -52,8 +52,8 @@
                 &kp F           &kp L           &kp H           &kp W          &kp Z
                 &kp Q           &kp P           &kp U           &kp O          &kp Y
 
-                &mt LCTRL S     &mt LALT R      &mt LSHFT N     &mt LGUI T     &kp V
-                &kp K           &mt RGUI D      &mt RSHFT E     &mt RALT A     &mt RCTRL I
+                &mt LALT S      &mt LCTRL R     &mt LSHFT N     &mt LGUI T     &kp V
+                &kp K           &mt RGUI D      &mt RSHFT E     &mt RCTRL A    &mt RALT I
 
                 &kp C           &kp B           &kp M
                 &kp G           &kp X           &kp J
@@ -69,8 +69,8 @@
 //       ┌─────┤     ├─────┐                                     ┌─────┤  8  ├─────┐
 // ┌─────┤     ├─────┤     ├─────┐                         ┌─────┤  7  ├─────┤  9  ├─────┐
 // │     ├─────┤ SFT ├─────┤     │                         │     ├─────┤  5  ├─────┤  0  │
-// ├─────┤ ALT ├─────┤ GUI ├─────┤                         ├─────┤  4  ├─────┤  6  ├─────┤
-// │ CTL ├─────┤     ├─────┤     │                         │     ├─────┤  2  ├─────┤  ;  │
+// ├─────┤ CTL ├─────┤ GUI ├─────┤                         ├─────┤  4  ├─────┤  6  ├─────┤
+// │ ALT ├─────┤     ├─────┤     │                         │     ├─────┤  2  ├─────┤  ;  │
 // └─────┤     ├─────┤     ├─────┘                         └─────┤  1  ├─────┤  3  ├─────┘
 //       └─────┘     └─────┘                                     └─────┘     └─────┘
 //                   ┌─────┐                                     ┌─────┐
@@ -81,11 +81,11 @@
                 &trans      &trans     &trans      &trans     &trans
                 &trans      &kp N7     &kp N8      &kp N9     &kp N0
 
-                &kp LCTRL   &kp LALT   &kp LSHFT   &kp LGUI   &trans
+                &kp LALT    &kp LCTRL  &kp LSHFT   &kp LGUI   &trans
                 &trans      &kp N4     &kp N5      &kp N6     &kp SEMI
 
-                &trans     &trans      &trans
-                &kp N1     &kp N2      &kp N3
+                &trans      &trans      &trans
+                &kp N1      &kp N2      &kp N3
 
                 &trans      &trans
                 &trans      &kp BSPC
@@ -98,8 +98,8 @@
 //       ┌─────┤  [  ├─────┐                                     ┌─────┤     ├─────┐
 // ┌─────┤  `  ├─────┤  ]  ├─────┐                         ┌─────┤     ├─────┤     ├─────┐
 // │ CAP ├─────┤  ,  ├─────┤     │                         │     ├─────┤ SFT ├─────┤     │
-// ├─────┤  '  ├─────┤  .  ├─────┤                         ├─────┤ GUI ├─────┤ ALT ├─────┤
-// │  /  ├─────┤  -  ├─────┤     │                         │     ├─────┤     ├─────┤ CTL │
+// ├─────┤  '  ├─────┤  .  ├─────┤                         ├─────┤ GUI ├─────┤ CTL ├─────┤
+// │  /  ├─────┤  -  ├─────┤     │                         │     ├─────┤     ├─────┤ ALT │
 // └─────┤  \  ├─────┤  =  ├─────┘                         └─────┤     ├─────┤     ├─────┘
 //       └─────┘     └─────┘                                     └─────┘     └─────┘
 //                   ┌─────┐                                     ┌─────┐
@@ -111,10 +111,10 @@
                 &trans      &trans      &trans        &trans      &trans
 
                 &kp SLASH   &kp SQT     &kp COMMA     &kp DOT     &trans
-                &trans      &kp RGUI    &kp RSHFT     &kp RALT    &kp RCTRL
+                &trans      &kp RGUI    &kp RSHFT     &kp RCTRL   &kp RALT
 
-                &kp BSLH    &kp MINUS     &kp EQUAL
-                &trans      &trans        &trans
+                &kp BSLH    &kp MINUS   &kp EQUAL
+                &trans      &trans      &trans
 
                 &kp TAB     &trans
                 &trans      &trans
@@ -127,8 +127,8 @@
 //       ┌─────┤     ├─────┐                                     ┌─────┤  ↑  ├─────┐
 // ┌─────┤     ├─────┤     ├─────┐                         ┌─────┤ Ins ├─────┤ VlU ├─────┐
 // │ BtC ├─────┤ SFT ├─────┤ Ble │                         │ Hom ├─────┤  ↓  ├─────┤ VlD │
-// ├─────┤ ALT ├─────┤ GUI ├─────┤                         ├─────┤  ←  ├─────┤  →  ├─────┤
-// │ CTL ├─────┤ Bt1 ├─────┤ Usb │                         │ End ├─────┤ PgU ├─────┤ Mut │
+// ├─────┤ CTL ├─────┤ GUI ├─────┤                         ├─────┤  ←  ├─────┤  →  ├─────┤
+// │ ALT ├─────┤ Bt1 ├─────┤ Usb │                         │ End ├─────┤ PgU ├─────┤ Mut │
 // └─────┤ Bt0 ├─────┤ Bt2 ├─────┘                         └─────┤ PgD ├─────┤ Del ├─────┘
 //       └─────┘     └─────┘                                     └─────┘     └─────┘
 //                   ┌─────┐                                     ┌─────┐
@@ -139,7 +139,7 @@
                 &bt BT_CLR     &trans         &trans         &trans         &out OUT_BLE
                 &kp HOME       &kp INS        &kp UP         &kp C_VOL_UP   &kp C_VOL_DN
 
-                &kp LCTRL      &kp LALT       &kp LSHFT      &kp LGUI       &out OUT_USB
+                &kp LALT       &kp LCTRL      &kp LSHFT      &kp LGUI       &out OUT_USB
                 &kp END        &kp LEFT       &kp DOWN       &kp RIGHT      &kp K_MUTE
 
                 &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2
@@ -156,8 +156,8 @@
 //       ┌─────┤ F3  ├─────┐                                     ┌─────┤     ├─────┐
 // ┌─────┤ F2  ├─────┤ F4  ├─────┐                         ┌─────┤     ├─────┤     ├─────┐
 // │ F1  ├─────┤ F7  ├─────┤ F12 │                         │     ├─────┤ SFT ├─────┤     │
-// ├─────┤ F6  ├─────┤ F8  ├─────┤                         ├─────┤ GUI ├─────┤ ALT ├─────┤
-// │ F5  ├─────┤ F10 ├─────┤ F13 │                         │     ├─────┤     ├─────┤ CTL │
+// ├─────┤ F6  ├─────┤ F8  ├─────┤                         ├─────┤ GUI ├─────┤ CTL ├─────┤
+// │ F5  ├─────┤ F10 ├─────┤ F13 │                         │     ├─────┤     ├─────┤ ALT │
 // └─────┤ F9  ├─────┤ F11 ├─────┘                         └─────┤     ├─────┤     ├─────┘
 //       └─────┘     └─────┘                                     └─────┘     └─────┘
 //                   ┌─────┐                                     ┌─────┐
@@ -169,7 +169,7 @@
                 &trans    &trans     &trans      &trans     &trans
 
                 &kp F5    &kp F6     &kp F7      &kp F8     &kp F13
-                &trans    &kp RGUI   &kp RSHFT   &kp RALT   &kp RCTRL
+                &trans    &kp RGUI   &kp RSHFT   &kp RCTRL  &kp RALT
 
                 &kp F9    &kp F10    &kp F11
                 &trans    &trans     &trans
