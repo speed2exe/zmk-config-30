@@ -202,7 +202,7 @@
                 &kp LALT    &kp LCTRL      &kp LSHFT       &kp LGUI   &trans
                 &trans      &kp HOME       &kp C_VOL_UP    &kp INS    &kp C_MUTE
 
-                &trans      &out OUT_BLUE   &out OUT_USB
+                &trans      &out OUT_BLE   &out OUT_USB
                 &kp END     &kp C_VOL_DN    &kp DEL
 
                 &trans      &trans
