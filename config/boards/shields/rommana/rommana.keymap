@@ -88,7 +88,7 @@
                 &kp LALT    &mt LCTRL C   &mt LSHFT B   &mt LGUI M    &trans
                 &trans      &kp N4        &kp N5        &kp N6        &kp SEMI
 
-                &trans      &trans        &trans
+                &kp F       &kp V         &kp Z
                 &kp N1      &kp N2        &kp N3
 
                 &trans      &trans
@@ -118,7 +118,7 @@
                 &trans      &mt RGUI G    &mt RSHFT X    &mt RCTRL J   &kp RALT
 
                 &kp SQT     &kp COMMA     &kp DOT
-                &trans      &trans        &trans
+                &kp Q       &kp K         &kp Y
 
                 &mt ext TAB     &trans
                 &trans          &trans
@@ -160,7 +160,7 @@
 // │     ├─────┤ SFT ├─────┤     │                         │     ├─────┤  ↑  ├─────┤     │
 // ├─────┤ CTL ├─────┤ GUI ├─────┤                         ├─────┤ PgU ├─────┤ PgD ├─────┤
 // │ ALT ├─────┤ BtN ├─────┤     │                         │     ├─────┤  ↓  ├─────┤     │
-// └─────┤ Bt1 ├─────┤ BtC ├─────┘                         └─────┤  ←  ├─────┤  →  ├─────┘
+// └─────┤ Bt0 ├─────┤ BtC ├─────┘                         └─────┤  ←  ├─────┤  →  ├─────┘
 //       └─────┘     └─────┘                                     └─────┘     └─────┘
 //                   ┌─────┐                                     ┌─────┐
 //                   │     ├─────┐                         ┌─────┤ SPC │
