@@ -15,6 +15,7 @@
 #define ext  3
 #define nav  4
 #define sys  5
+
 // #define fn   5
 
 // &kscan0 {
@@ -61,7 +62,8 @@
                 &kp D           &kp E           &kp A
 
                 &lt num SPACE   &lt nav ESC
-                &lt fn RET      &lt sym SPACE
+                /* &lt fn RET      &lt sym SPACE */
+                &kp RET      &lt sym SPACE
                 >;
         };
 
