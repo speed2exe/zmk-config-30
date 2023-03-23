@@ -131,7 +131,7 @@
                 &trans   &trans   &trans
                 &trans   &trans   &trans
 
-                &mt ext TAB     &trans
+                &lt ext TAB     &trans
                 &trans          &trans
                 >;
         };
