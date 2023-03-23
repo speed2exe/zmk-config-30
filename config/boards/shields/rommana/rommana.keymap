@@ -38,7 +38,7 @@
         mo_tog: behavior_mo_tog {
             compatible = "zmk,behavior-hold-tap";
             label = "mo_tog";
-            #binding-cell = <2>;
+            #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <1024>;
             bindings = <&mo>, <&tog>;
