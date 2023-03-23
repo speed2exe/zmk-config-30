@@ -34,6 +34,17 @@
 
 / {
 
+    behaviors {
+        mo_tog: behavior_mo_tog {
+            compatible = "zmk,behavior-hold-tap";
+            label = "mo_tog";
+            #binding-cell = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <1024>;
+            bindings = <&mo>, <&tog>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -56,7 +67,7 @@
                 &trans          &kp P           &kp U           &kp O         &trans
 
                 &mt LALT S      &mt LCTRL R     &mt LSHFT N     &mt LGUI T     &trans
-                &trans          &mt RGUI D      &mt RSHFT E     &mt RCTRL E    &mt RALT I
+                &trans          &mt RGUI D      &mt RSHFT E     &mt RCTRL A    &mt RALT I
 
                 &trans   &trans   &trans
                 &trans   &trans   &trans
