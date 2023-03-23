@@ -136,8 +136,8 @@
 //                   └─────┤     │                         │     ├─────┘
 //                         └─────┘                         └─────┘
             bindings = <
-                &trans      &kp BSLH      &kp MINUS      &kp EQUAL     &trans
-                &trans      &kp N7        &kp N8         &kp N9        &trans
+                &trans      &trans        &trans         &trans        &trans
+                &trans      &trans        &trans         &trans        &trans
 
                 &kp LALT    &mt LCTRL BSLH  &mt LSHFT MINUS  &mt LGUI EQUAL  &trans
                 &trans      &mt RGUI N7     &mt RSHFT N8     &mt RCTRL N9    &mt RALT N0
