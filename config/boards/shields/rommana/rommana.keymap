@@ -61,7 +61,7 @@
 
                 &lt num SPACE   &lt nav ESC
                 /* &lt fn RET      &lt sym SPACE */
-                &kp RET      &lt sym SPACE
+                &lt sys RET      &lt sym SPACE
                 >;
         };
 
