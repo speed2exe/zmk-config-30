@@ -34,20 +34,8 @@
 
 / {
 
-    behaviors {
-        mo_tog: behavior_mo_tog {
-            compatible = "zmk,behavior-hold-tap";
-            label = "mo_tog";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <1024>;
-            bindings = <&mo>, <&tog>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
-
 
         def {
 //             ┌─────┐                                                 ┌─────┐
@@ -78,7 +66,6 @@
                 >;
         };
 
-
         num {
 //             ┌─────┐                                                 ┌─────┐
 //       ┌─────┤  V  ├─────┐                                     ┌─────┤  5  ├─────┐
@@ -106,7 +93,6 @@
                 &trans      &lt ext BSPC
                 >;
         };
-
 
         sym {
 //             ┌─────┐                                                 ┌─────┐
@@ -188,10 +174,9 @@
                 &trans      &trans         &trans
 
                 &trans      &trans
-                &trans      &lt SPACE sys
+                &trans      &lt sys SPACE
                 >;
         };
-
 
         sys {
 //             ┌─────┐                                                 ┌─────┐
