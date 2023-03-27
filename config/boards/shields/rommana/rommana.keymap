@@ -47,7 +47,7 @@
 //       └─────┘     └─────┘                                     └─────┘     └─────┘
 //                   ┌─────┐                                     ┌─────┐
 //                   │ SPC ├─────┐                         ┌─────┤ SPC │
-//                   └─num─┤ ESC │                         │ RET ├─sym─┘
+//                   └─sym─┤ ESC │                         │ RET ├─num─┘
 //                         └─nav─┘                         └─sys─┘
             bindings = <
                 &trans          &kp L           &kp H           &kp W         &trans
@@ -59,9 +59,8 @@
                 &trans   &trans   &trans
                 &trans   &trans   &trans
 
-                &lt num SPACE   &lt nav ESC
-                /* &lt fn RET      &lt sym SPACE */
-                &lt sys RET      &lt sym SPACE
+                &lt sym SPACE    &lt sys ESC
+                &lt nav RET      &lt num SPACE
                 >;
         };
 
@@ -75,8 +74,8 @@
 // └─────┤     ├─────┤     ├─────┘                         └─────┤     ├─────┤     ├─ALT─┘
 //       └─────┘     └─────┘                                     └─────┘     └─────┘
 //                   ┌─────┐                                     ┌─────┐
-//                   │     ├─────┐                         ┌─────┤ BSP │
-//                   └─────┤     │                         │     ├─ext─┘
+//                   │ ext ├─────┐                         ┌─────┤ BSP │
+//                   └─────┤     │                         │     ├─────┘
 //                         └─────┘                         └─────┘
             bindings = <
                 &trans      &kp F         &kp V         &kp Z        &trans
@@ -88,8 +87,8 @@
                 &trans   &trans   &trans
                 &trans   &trans   &trans
 
-                &trans      &trans
-                &trans      &lt ext BSPC
+                &mo ext    &trans
+                &trans     &kp BSPC
                 >;
         };
 
@@ -103,8 +102,8 @@
 // └─ALT─┤     ├─────┤     ├─────┘                         └─────┤     ├─────┤     ├─────┘
 //       └─────┘     └─────┘                                     └─────┘     └─────┘
 //                   ┌─────┐                                     ┌─────┐
-//                   │ TAB ├─────┐                         ┌─────┤     │
-//                   └─ext─┤     │                         │     ├─────┘
+//                   │ TAB ├─────┐                         ┌─────┤ ext │
+//                   └─────┤     │                         │     ├─────┘
 //                         └─────┘                         └─────┘
             bindings = <
                 &trans      &kp GRAVE     &kp LBKT       &kp RBKT     &trans
@@ -116,8 +115,8 @@
                 &trans   &trans   &trans
                 &trans   &trans   &trans
 
-                &lt ext TAB     &trans
-                &trans          &trans
+                &kp TAB       &trans
+                &trans        &mo ext
                 >;
         };
 
@@ -151,19 +150,19 @@
 
         nav {
 //             ┌─────┐                                                 ┌─────┐
-//       ┌─────┤ BtN ├─────┐                                     ┌─────┤  ↑  ├─────┐
-// ┌─────┤ Bt1 ├─────┤ BtC ├─────┐                         ┌─────┤ PgU ├─────┤ PgD ├─────┐
+//       ┌─────┤     ├─────┐                                     ┌─────┤  ↑  ├─────┐
+// ┌─────┤     ├─────┤     ├─────┐                         ┌─────┤ PgU ├─────┤ PgD ├─────┐
 // │     ├─────┤ SFT ├─────┤     │                         │     ├─────┤  ↓  ├─────┤     │
 // ├─────┤ CTL ├─────┤ GUI ├─────┤                         ├─────┤  ←  ├─────┤  →  ├─────┤
 // │ ALT ├─────┤     ├─────┤     │                         │     ├─────┤     ├─────┤     │
 // └─────┤     ├─────┤     ├─────┘                         └─────┤     ├─────┤     ├─────┘
 //       └─────┘     └─────┘                                     └─────┘     └─────┘
 //                   ┌─────┐                                     ┌─────┐
-//                   │     ├─────┐                         ┌─────┤ Del │
+//                   │     ├─────┐                         ┌─────┤     │
 //                   └─────┤     │                         │     ├─────┘
 //                         └─────┘                         └─────┘
             bindings = <
-                &trans      &bt BT_SEL 0   &bt BT_NXT     &bt BT_SEL 2   &trans
+                &trans      &trans         &trans         &trans         &trans
                 &trans      &kp PG_UP      &kp UP         &kp PG_DN      &trans
 
                 &kp LALT    &kp LCTRL      &kp LSHFT      &kp LGUI       &trans
@@ -173,35 +172,35 @@
                 &trans      &trans         &trans
 
                 &trans      &trans
-                &trans      &kp DEL
+                &trans      &trans
                 >;
         };
 
         sys {
 //             ┌─────┐                                                 ┌─────┐
-//       ┌─────┤ VlU ├─────┐                                     ┌─────┤     ├─────┐
-// ┌─────┤ Hom ├─────┤ Ins ├─────┐                         ┌─────┤     ├─────┤     ├─────┐
-// │     ├─────┤ VlD ├─────┤     │                         │     ├─────┤     ├─────┤     │
-// ├─────┤ End ├─────┤ Mut ├─────┤                         ├─────┤     ├─────┤     ├─────┤
+//       ┌─────┤     ├─────┐                                     ┌─────┤ VlU ├─────┐
+// ┌─────┤     ├─────┤     ├─────┐                         ┌─────┤ Hom ├─────┤ Ins ├─────┐
+// │     ├─────┤ BtN ├─────┤     │                         │     ├─────┤ VlD ├─────┤     │
+// ├─────┤ Bt0 ├─────┤ BtC ├─────┤                         ├─────┤ End ├─────┤ Mut ├─────┤
 // │     ├─────┤     ├─────┤     │                         │     ├─────┤     ├─────┤     │
 // └─────┤     ├─────┤     ├─────┘                         └─────┤     ├─────┤     ├─────┘
 //       └─────┘     └─────┘                                     └─────┘     └─────┘
 //                   ┌─────┐                                     ┌─────┐
-//                   │     ├─────┐                         ┌─────┤     │
+//                   │     ├─────┐                         ┌─────┤ Del │
 //                   └─────┤     │                         │     ├─────┘
 //                         └─────┘                         └─────┘
             bindings = <
+                &trans     &trans      &trans          &trans         &trans
                 &trans     &kp HOME    &kp C_VOL_UP    &kp INS        &trans
-                &trans     &trans      &trans          &trans         &trans
 
-                &trans     &kp END     &kp C_VOL_DN    &kp C_MUTE     &trans
-                &trans     &trans      &trans          &trans         &trans
+                &trans     &bt BT_SEL 0  &bt BT_NXT    &bt BT_CLR     &trans
+                &trans     &kp END       &kp C_VOL_DN  &kp C_MUTE     &trans
 
                 &trans     &trans      &trans
                 &trans     &trans      &trans
 
                 &trans     &trans
-                &trans     &trans
+                &trans     &kp DEL
                 >;
         };
 
