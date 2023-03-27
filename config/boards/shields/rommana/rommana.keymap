@@ -116,7 +116,7 @@
                 &trans   &trans   &trans
 
                 &trans       &trans
-                &trans       &lt ext BSP
+                &trans       &lt ext BSPC
                 >;
         };
 
