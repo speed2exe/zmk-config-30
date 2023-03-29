@@ -36,7 +36,7 @@
         compatible = "zmk,conditional-layers";
         tri_layer {
             if-layers = <num sym>;
-            then-layer = <ext>;
+            then-layers = <ext>;
         };
     };
 
