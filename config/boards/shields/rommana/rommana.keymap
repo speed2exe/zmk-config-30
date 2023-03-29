@@ -32,6 +32,13 @@
 };
 
 / {
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        tri_layer {
+            if-layers = <num sym>;
+            then-layers = <ext>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -75,7 +82,7 @@
 //       └─────┘     └─────┘                                     └─────┘     └─────┘
 //                   ┌─────┐                                     ┌─────┐
 //                   │ TAB ├─────┐                         ┌─────┤     │
-//                   └─ext─┤     │                         │     ├─────┘
+//                   └─────┤     │                         │     ├─────┘
 //                         └─────┘                         └─────┘
             bindings = <
                 &trans      &kp F         &kp V         &kp Z        &trans
@@ -87,8 +94,8 @@
                 &trans   &trans   &trans
                 &trans   &trans   &trans
 
-                &lt ext TAB   &trans
-                &trans        &trans
+                &kp TAB   &trans
+                &trans    &trans
                 >;
         };
 
@@ -103,7 +110,7 @@
 //       └─────┘     └─────┘                                     └─────┘     └─────┘
 //                   ┌─────┐                                     ┌─────┐
 //                   │     ├─────┐                         ┌─────┤ BSP │
-//                   └─────┤     │                         │     ├─ext─┘
+//                   └─────┤     │                         │     ├─────┘
 //                         └─────┘                         └─────┘
             bindings = <
                 &trans      &kp GRAVE     &kp LBKT       &kp RBKT     &trans
@@ -115,8 +122,8 @@
                 &trans   &trans   &trans
                 &trans   &trans   &trans
 
-                &trans       &trans
-                &trans       &lt ext BSPC
+                &trans   &trans
+                &trans   &kp BSPC
                 >;
         };
 
