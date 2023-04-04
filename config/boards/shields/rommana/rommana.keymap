@@ -10,11 +10,11 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define def 0
-#define a_left 1
-#define a_right 2
+#define a_right 1
+#define a_left 2
 #define num 3
-#define n_left 4
-#define n_right 5
+#define n_right 4
+#define n_left 5
 #define nav 6
 #define sys 7
 
