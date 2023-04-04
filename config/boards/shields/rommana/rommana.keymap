@@ -136,7 +136,7 @@
 &trans                             &kp C_VOL_UP    &kp HOME   &kp INS
 &trans &trans                                                                    &trans     &trans   &trans
 &trans               &kp C_MUTE    &kp C_VOL_DN    &kp END    &kp DEL
-&trans &trans                                                                    &trans     &trans   &trans   &trans
+&trans &trans                                                                    &kp RGUI     &kp RSHFT   &kp RCTRL    &kp RALT
 &trans &trans &trans
 &trans &trans &trans
                                              &kp TAB     &kp ESC                &trans   &trans
