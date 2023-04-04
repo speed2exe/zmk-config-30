@@ -91,7 +91,7 @@
 &trans &trans                                                                         &mt RGUI DOT   &mt RSHFT N0  &mt RCTRL N9   &mt RALT SEMI
 &trans &trans &trans
 &trans &trans &trans
-                                                      &trans   &mo n_right           &mo_to n_left left  &trans
+                                                      &trans   &mo n_right           &mo_to n_left def  &trans
                 >;
         };
 
