@@ -11,7 +11,7 @@
 
 #define def 0
 #define right 1
-#define left 2
+#define lleft 2
 // #define extra 3
 // #define nav 4
 // #define sys 5
@@ -70,7 +70,7 @@
                 >;
         };
 
-        left {
+        lleft {
             bindings = <
 &trans                                      &kp F      &kp V      &kp Z
 &trans &trans                                                                     &kp N4   &kp N5  &kp N6
