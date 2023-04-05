@@ -12,9 +12,9 @@
 #define def 0
 #define right 1
 #define left 2
-// #define extra 3
-#define nav 3
-#define sys 4
+#define extra 3
+#define nav 4
+#define sys 5
 
 // &kscan0 {
 //     debounce-period = <16>;
@@ -32,13 +32,13 @@
 
 / {
 
-//     conditional_layers {
-//         compatible = "zmk,conditional-layers";
-//         tri_layer {
-//             if-layers = <right left>;
-//             then-layer = <extra>;
-//         };
-//     };
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        tri_layer {
+            if-layers = <right left>;
+            then-layer = <extra>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -68,7 +68,6 @@
                 >;
         };
 
-
         left {
             bindings = <
 &trans                                 &kp F      &kp V     &kp Z
@@ -81,30 +80,17 @@
                 >;
         };
 
-//        left {
-//            bindings = <
-//&trans                                      &kp F      &kp V      &kp Z
-//&trans &trans                                                                     &kp N4   &kp N5  &kp N6
-//// &trans                  &mt LALT SLASH  &mt LCTRL C   &mt LSHFT B    &mt LGUI M
-//&trans                  &trans &trans &trans &trans
-//&trans &trans                                                                  &mt RGUI N1  &mt RSHFT N2  &kp RCTRL N3   &kp RALT
-//&trans &trans &trans
-//&trans &trans &trans
-//                                                    &trans      &trans           &trans  &trans
-//                >;
-//        };
-
-//         extra {
-//             bindings = <
-// &trans                              &trans    &trans    &trans
-// &trans &trans                                                                     &trans    &trans   &trans
-// &trans                 &kp LALT    &mt LCTRL BSLH    &mt LSHFT MINUS   &mt LGUI EQUAL
-// &trans &trans                                                               &mt RGUI N7  &mt RSHFT N8  &mt RCTRL N9   &kp RALT
-// &trans &trans &trans
-// &trans &trans &trans
-//                                                     &trans      &trans           &trans  &trans
-//                 >;
-//         };
+        extra {
+            bindings = <
+&trans                              &trans    &trans    &trans
+&trans &trans                                                                     &trans    &trans   &trans
+&trans                 &kp LALT    &mt LCTRL BSLH    &mt LSHFT MINUS   &mt LGUI EQUAL
+&trans &trans                                                               &mt RGUI N7  &mt RSHFT N8  &mt RCTRL N9   &mt RALT N0
+&trans &trans &trans
+&trans &trans &trans
+                                                    &trans      &trans           &trans  &trans
+                >;
+        };
 
         nav {
             bindings = <
