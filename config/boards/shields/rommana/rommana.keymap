@@ -51,7 +51,6 @@
 &trans &trans                                                                      &mt RGUI D     &mt RSHFT E   &mt RCTRL A    &mt RALT I
 &trans &trans &trans
 &trans &trans &trans
-                                    // &lt nav SPACE    &mo right         &mo left     &lt sys SPACE
                                      &lt nav SPACE    &mo right           &mo left     &lt sys SPACE
                 >;
         };
