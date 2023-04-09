@@ -83,8 +83,8 @@
             bindings = <
 &trans                              &trans    &trans    &trans
 &trans &trans                                                                     &trans    &trans   &trans
-&trans                 &kp LALT    &kp LCTRL    &mt LSHFT MINUS   &mt LGUI EQUAL
-&trans &trans                                                               &mt RGUI N7  &mt RSHFT N8  &mt RCTRL N9   &kp RALT
+&trans                 &trans      &trans     &mt LSHFT MINUS   &mt LGUI EQUAL
+&trans &trans                                                               &mt RGUI N7  &mt RSHFT N8  &mt RCTRL N9   &trans
 &trans &trans &trans
 &trans &trans &trans
                                                     &trans      &trans           &trans  &trans
