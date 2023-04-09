@@ -59,7 +59,7 @@
             bindings = <
 &trans                                 &kp GRAVE      &kp LBKT     &kp RBKT
 &trans &trans                                                                      &kp Q    &kp K    &kp Y
-&trans                  &mt LALT BSLH   &mt LCTRL SQT  &mt LSHFT COMMA   &mt LGUI DOT
+&trans                  &trans     &mt LCTRL SQT  &mt LSHFT COMMA   &mt LGUI DOT
 &trans &trans                                                               &mt RGUI G   &mt RSHFT X   &mt RCTRL J    &mt RALT SEMI
 &trans &trans &trans
 &trans &trans &trans
@@ -83,7 +83,7 @@
             bindings = <
 &trans                              &trans    &trans    &trans
 &trans &trans                                                                     &trans    &trans   &trans
-&trans                 &trans      &trans     &mt LSHFT MINUS   &mt LGUI EQUAL
+&trans                 &trans   &mt LCTRL BSLH   &mt LSHFT MINUS   &mt LGUI EQUAL
 &trans &trans                                                               &mt RGUI N7  &mt RSHFT N8  &mt RCTRL N9   &trans
 &trans &trans &trans
 &trans &trans &trans
