@@ -59,7 +59,7 @@
             bindings = <
 &trans                                 &kp GRAVE      &kp LBKT     &kp RBKT
 &trans &trans                                                                      &kp Q    &kp K    &kp Y
-&trans                    &kp LALT   &mt LCTRL SQT  &mt LSHFT COMMA   &mt LGUI DOT
+&trans                  &mt LALT BSLH   &mt LCTRL SQT  &mt LSHFT COMMA   &mt LGUI DOT
 &trans &trans                                                               &mt RGUI G   &mt RSHFT X   &mt RCTRL J    &mt RALT SEMI
 &trans &trans &trans
 &trans &trans &trans
@@ -72,7 +72,7 @@
 &trans                                 &kp F      &kp V     &kp Z
 &trans &trans                                                                      &kp N4    &kp N5    &kp N6
 &trans                    &mt LALT SLASH  &mt LCTRL C  &mt LSHFT B   &mt LGUI M
-&trans &trans                                                               &mt RGUI N1   &mt RSHFT N2   &mt RCTRL N3    &kp RALT
+&trans &trans                                                               &mt RGUI N1   &mt RSHFT N2   &mt RCTRL N3    &mt RALT N0
 &trans &trans &trans
 &trans &trans &trans
                                                     &trans      &trans             &trans   &trans
@@ -83,8 +83,8 @@
             bindings = <
 &trans                              &trans    &trans    &trans
 &trans &trans                                                                     &trans    &trans   &trans
-&trans                 &kp LALT    &mt LCTRL BSLH    &mt LSHFT MINUS   &mt LGUI EQUAL
-&trans &trans                                                               &mt RGUI N7  &mt RSHFT N8  &mt RCTRL N9   &mt RALT N0
+&trans                 &kp LALT    &kp LCTRL    &mt LSHFT MINUS   &mt LGUI EQUAL
+&trans &trans                                                               &mt RGUI N7  &mt RSHFT N8  &mt RCTRL N9   &kp RALT
 &trans &trans &trans
 &trans &trans &trans
                                                     &trans      &trans           &trans  &trans
